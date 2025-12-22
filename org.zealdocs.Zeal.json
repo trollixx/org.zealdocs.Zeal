@@ -1,20 +1,20 @@
 {
     "id": "org.zealdocs.Zeal",
     "runtime": "org.kde.Platform",
-    "runtime-version": "6.8",
+    "runtime-version": "6.9",
     "sdk": "org.kde.Sdk",
     "base": "io.qt.qtwebengine.BaseApp",
-    "base-version": "6.8",
+    "base-version": "6.9",
     "command": "zeal",
     "rename-appdata-file": "org.zealdocs.zeal.appdata.xml",
     "rename-desktop-file": "org.zealdocs.zeal.desktop",
     "rename-icon": "zeal",
     "finish-args": [
-        "--socket=wayland",
-        "--socket=fallback-x11",
-        "--share=ipc",
         "--device=dri",
+        "--share=ipc",
         "--share=network",
+        "--socket=fallback-x11",
+        "--socket=wayland",
         "--talk-name=org.kde.StatusNotifierWatcher"
     ],
     "cleanup-commands": [
